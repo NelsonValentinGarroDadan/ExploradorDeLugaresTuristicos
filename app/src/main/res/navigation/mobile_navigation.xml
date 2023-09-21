@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/Mapa">
+
+    <fragment
+        android:id="@+id/Mapa"
+        android:name="com.example.exploradordelugarestursticos.ui.mapa.MapaFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_mapa" />
+
+    <fragment
+        android:id="@+id/LugaresTuristicos"
+        android:name="com.example.exploradordelugarestursticos.ui.lugaresTuristicos.LugaresTuristicosFragment"
+        android:label="LugaresTUristicos"
+        tools:layout="@layout/fragment_lugares_turisticos" />
+
+    <fragment
+        android:id="@+id/Configuraciones"
+        android:name="com.example.exploradordelugarestursticos.ui.configuraciones.ConfiguracionesFragment"
+        android:label="Configuraciones"
+        tools:layout="@layout/fragment_configuraciones" />
+    <fragment
+        android:id="@+id/Salir"
+        android:name="com.example.exploradordelugarestursticos.ui.salir.SalirFragment"
+        android:label="Salir"
+        tools:layout="@layout/fragment_configuraciones" />
+</navigation>
